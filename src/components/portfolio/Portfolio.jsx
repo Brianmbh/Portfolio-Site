@@ -9,22 +9,6 @@ export default function Portfolio() {
       id: "featured",
       title: "Featured",
     },
-    {
-      id: "web",
-      title: "Web App",
-    },
-    {
-      id: "mobile",
-      title: "Mobile App",
-    },
-    {
-      id: "design",
-      title: "Design",
-    },
-    {
-      id: "content",
-      title: "Content",
-    },
   ];
   return (
     <div className="portfolio" id="portfolio">
@@ -41,28 +25,20 @@ export default function Portfolio() {
         </ul>
         <div className="container">
           <div className="item">
-            <img src="/assets/banking app 2.jpeg " alt=""/>
-            <h3>Banking App</h3>
+            <img className="banking" src="/assets/React weather pic 1.png" alt=""/>
+            <h3> React Weather App</h3> 
           </div>
           <div className="item">
-            <img className="banking" src="/assets/Banking App (test).jpeg" alt=""/>
-            <h3>Banking App</h3>
+            <img className="banking" src="/assets/Rod Wave portfolio 1 .png" alt=""/>
+            <h3>Entreprenuer Site</h3>
           </div>
           <div className="item">
-            <img className="banking" src="/assets/Banking App (test).jpeg" alt=""/>
-            <h3>Banking App</h3>
+            <img className="banking" src="/assets/piano js.png" alt=""/>
+            <h3>Piano</h3>
           </div>
           <div className="item">
-            <img className="banking" src="/assets/Banking App (test).jpeg" alt=""/>
-            <h3>Banking App</h3>
-          </div>
-          <div className="item">
-            <img className="banking" src="/assets/Banking App (test).jpeg" alt=""/>
-            <h3>Banking App</h3>
-          </div>
-          <div className="item">
-            <img className="banking" src="/assets/Banking App (test).jpeg" alt=""/>
-            <h3>Banking App</h3>
+            <img className="banking" src="/assets/simple clock.png" alt=""/>
+            <h3>Clock</h3>
           </div>
         </div>
     </div>

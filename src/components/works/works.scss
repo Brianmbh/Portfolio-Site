@@ -27,8 +27,10 @@
     .slider{
         height: 350px;
         display: flex;
+        min-width: max-content;
         position: absolute;
         left: 0;
+        transition: all 1s ease-out;
 
         .container{
             width: 100vw;
@@ -59,7 +61,7 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
-                        overflow: hidden;
+                        
 
                         .imgContainer{
                             width: 45px;
@@ -69,6 +71,7 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            margin-left: 20px;
 
                             img{
                                 width: 25px;
@@ -101,8 +104,9 @@
                     overflow: hidden;
 
                     img{
-                        width: 400px;
-                        transform: rotate(-10deg);
+                        width: 500px;
+                        object-fit: contain;
+                        transform: rotate(10deg);
                     }
                 }
             }
