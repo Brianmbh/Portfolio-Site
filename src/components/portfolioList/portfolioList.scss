@@ -1,20 +1,18 @@
 @import "../../global.scss";
 
-li{
-    font-size: 14px;
-    margin-right: 50px;
-    padding: 7px;
-    border-radius: 10px;
-    cursor: pointer;
-    height: 30%;
-    text-align: center;
-    display: inline;
+Li{
+.portfolioList {
+  font-size: 20px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
 
-    &.active{
-        background-color: $mainColor;
-        color: white;
-        overflow: hidden;
-        height: 50px;
-        text-align: center;
-    }
+
+  &.active {
+    background-color: $mainColor;
+    color: white;
+  }
+}
 }

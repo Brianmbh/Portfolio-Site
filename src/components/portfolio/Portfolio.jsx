@@ -1,15 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
-import "./portfolio.scss"
+import "./portfolio.scss";
+import {
+  featuredPortfolio,
+} from "../../data";
 
 export default function Portfolio() {
-    const [selected,setSelected] = useState("featured")
+    const [selected,setSelected] = useState("featured");
+    const [data, setData] = useState([]);
   const list = [
     {
       id: "featured",
       title: "Featured",
     },
   ];
+
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+      }
+    }, [selected]);
+
   return (
     <div className="portfolio" id="portfolio">
         <h1>Portfolio</h1>
@@ -24,23 +37,16 @@ export default function Portfolio() {
       ))}
         </ul>
         <div className="container">
+        {data.map((d) => (
           <div className="item">
-            <img className="banking" src="/assets/React weather pic 1.png" alt=""/>
-            <h3> React Weather App</h3> 
+            <img
+              src={d.img}
+              alt=""
+            />
+            <h3>{d.title}</h3>
           </div>
-          <div className="item">
-            <img className="banking" src="/assets/Rod Wave portfolio 1 .png" alt=""/>
-            <h3>Entreprenuer Site</h3>
-          </div>
-          <div className="item">
-            <img className="banking" src="/assets/piano js.png" alt=""/>
-            <h3>Piano</h3>
-          </div>
-          <div className="item">
-            <img className="banking" src="/assets/simple clock.png" alt=""/>
-            <h3>Clock</h3>
-          </div>
+        ))}
+      </div>
         </div>
-    </div>
-  )
+  );
 }

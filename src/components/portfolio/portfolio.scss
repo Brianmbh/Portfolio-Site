@@ -18,8 +18,13 @@
         margin-left: 1320px;
         list-style: none;
         display: inline;
-        padding-top: 50px;
+        padding-top: 50px;   
+        overflow: hidden;
         
+        li{
+            font-size: 20px;
+            font-weight: 400;
+        }
     }
     .container{
         width: 70%;

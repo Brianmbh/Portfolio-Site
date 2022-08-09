@@ -4,56 +4,56 @@ export default function Testimonials() {
   const data = [
   {
     id: 1,
-    name: "Tom Durden",
+    name: "VS Code",
     title: "Senior Developer",
     img:
-      "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+    "https://www.pngitem.com/pimgs/m/80-800968_vscode-visual-studio-logo-png-transparent-png.png",
     icon: "assets/twitter.png",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "My preferred code editor for debugging, task running, and version control.",
   },
   {
     id: 2,
-    name: "Tom Durden",
+    name: "Github",
     title: "Senior Developer",
     img:
-      "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn-icons-png.flaticon.com/512/25/25231.png",
     icon: "assets/twitter.png",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "View my projects, readme's and codes here at my Github.",
       featured: true,
   },
   {
     id: 3,
-    name: "Tom Durden",
+    name: "LinkedIN",
     title: "Senior Developer",
     img:
-      "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+      "https://cdn3.iconfinder.com/data/icons/inficons/512/linkedin.png",
     icon: "assets/twitter.png",
     desc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam dolorem.",
+      "Connect with me and view some of my skill badges.",
   },
 ];
   return (
     <div className="testimonials" id="testimonials">
-      <h1>Testimonials</h1>
+      <h1>Skills</h1>
       <div className="container">
       {data.map((d) => ( 
         <div className={d.featured ? "card featured" : "card"}>
           <div className="top">
           <img src="assets/External Link Arrow.webp" 
           className="left"/>
-          <img src="assets/bull nft profile.png" 
-          className="user"/>
-          <img src={d.img}
-           className="right"/>
+          <img
+                className="user"
+                src={d.img}
+                alt=""
+              />
           </div>
           <div className="center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            {d.desc}
           </div>
           <div className="bottom">
-            <h3>Ken</h3>
-            <h4>Ceo of SpaceX</h4>
+            <h3>{d.name}</h3>
           </div>
         </div>
         ))}

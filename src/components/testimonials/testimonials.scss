@@ -66,6 +66,7 @@
                 background-color: rgb(247, 250, 252);
                 width: 90%;
                 height: 100%;
+                overflow: hidden;
             }
             .bottom{
                 display: flex;
@@ -73,6 +74,7 @@
                 align-items: center;
                 justify-content: center;
                 width: 100%;
+                overflow: hidden;
              
                 h3 {
                 margin-top: 90px;
