@@ -15,13 +15,6 @@ export default function Portfolio() {
     },
   ];
 
-  useEffect(() => {
-    switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
-      }
-    }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
