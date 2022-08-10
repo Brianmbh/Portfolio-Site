@@ -5,6 +5,7 @@ import {
   featuredPortfolio,
 } from "../../data";
 
+ 
 export default function Portfolio() {
     const [selected,setSelected] = useState("featured");
     const [data, setData] = useState([]);
@@ -15,6 +16,13 @@ export default function Portfolio() {
     },
   ];
 
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+         break;
+      }
+    }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
