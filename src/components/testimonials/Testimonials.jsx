@@ -11,6 +11,7 @@ export default function Testimonials() {
     icon: "assets/twitter.png",
     desc:
       "My preferred code editor for debugging, task running, and version control.",
+      link:"https://code.visualstudio.com/download",
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ export default function Testimonials() {
     desc:
       "View my projects, readme's and codes here at my Github.",
       featured: true,
+      link:"https://github.com/Brianmbh",
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export default function Testimonials() {
     icon: "assets/twitter.png",
     desc:
       "Connect with me and view some of my skill badges.",
+      link:"www.linkedin.com/in/brian-harris-855514174",
   },
 ];
   return (
@@ -41,13 +44,11 @@ export default function Testimonials() {
       {data.map((d) => ( 
         <div className={d.featured ? "card featured" : "card"}>
           <div className="top">
-          <img src="assets/External Link Arrow.webp" 
-          className="left"/>
-          <img
-                className="user"
-                src={d.img}
-                alt=""
-              />
+            <a target="blank" href={d.link}>
+          <img src="assets/External Link Arrow.webp" className="left"/>   
+          </a>
+          <img className="user" 
+          src={d.img} alt=""/>
           </div>
           <div className="center">
             {d.desc}
