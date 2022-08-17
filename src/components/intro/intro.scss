@@ -4,6 +4,11 @@
     background-color: white;
     display: flex;
 
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .left{
         flex: 0.5;
         overflow: hidden;
@@ -17,10 +22,20 @@
             align-items: flex-end;
             justify-content: center;
             float: right;
+            @include mobile{
+                align-items: flex-start;
+                margin-top: 15px;
+                margin-left: 15px;
+            }
 
             img{
                 height: 635px;
                 width: auto;
+
+                @include mobile{
+                    height: 70%;
+                    margin-left: 270px;
+                }
             }
         }
     }
@@ -35,19 +50,46 @@
             display: flex;
            flex-direction: column;
             justify-content: center;
+
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+                margin-top: -90px;
+                height: 100%;
+            }
             
 
             h1 {
                 font-size: 60px;
                 margin-top: -60px;
+
+                @include mobile{
+                    font-size: 50px;
+                    margin-left: 120px;
+                    overflow: hidden;
+                }
             }
             h2 {
                 font-size: 35px;
                 margin-top: 170px;
+
+                @include mobile{
+                    font-size: 30px;
+                    margin-left: 190px;
+                    margin-bottom: 55px;
+                    overflow: hidden;
+                }
             }
             h3 {
                 font-size: 30px;
                 margin-top: -20px;
+
+                @include mobile{
+                    font-size: 25px;
+                    margin-left: 110px;
+                    margin-top: 30px;
+                    overflow: hidden;
+                }
 
                 span{
                     font-size: inherit;
@@ -77,6 +119,11 @@
             width: 45px;
             height: auto;
             animation: arrowBlink 2s infinite;
+
+            @include mobile{
+                margin-top: 55px;
+                margin-left: 15px;
+             }
          }
 
          @keyframes arrowBlink {
