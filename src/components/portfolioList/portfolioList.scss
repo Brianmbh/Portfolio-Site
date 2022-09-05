@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-Li{
+
 .portfolioList {
   font-size: 20px;
   margin-right: 50px;
@@ -8,11 +8,16 @@ Li{
   border-radius: 10px;
   cursor: pointer;
   overflow: hidden;
+  width: 100px;
+
+  @include mobile{
+    margin-right: 18px;
+  }
 
 
   &.active {
     background-color: $mainColor;
     color: white;
+    width: 100px;
   }
-}
 }

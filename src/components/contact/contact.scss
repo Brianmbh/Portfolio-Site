@@ -1,7 +1,13 @@
+@import "../../global.scss";
+
 .contact {
     background-color: #f8f8ff;
     overflow: hidden;
     display: flex;
+
+    @include mobile {
+        flex-direction: column;
+      }
 
     .left{
         flex: 1;
@@ -41,6 +47,11 @@
                 margin-bottom: 30px;
                 margin-top: 20px;
                 margin-left: 5px;
+
+                @include mobile {
+                    width: 200px;
+                    height: 20px;
+                  }
             }
 
             textarea{
@@ -50,6 +61,11 @@
                 margin-bottom: 30px;
                 margin-top: 5px;
                 margin-left: 5px;
+
+                @include mobile {
+                    width: 200px;
+                    height: 100px;
+                  }
             }
 
             button{
@@ -62,6 +78,10 @@
                 font-weight: 500;
                 cursor: pointer;
                 margin-left: 142px;
+
+                @include mobile {
+                    margin-left: 27px;
+                }
 
                 &:focus{
                     outline: none;

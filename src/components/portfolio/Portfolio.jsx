@@ -3,6 +3,7 @@ import PortfolioList from "../portfolioList/PortfolioList";
 import "./portfolio.scss";
 import {
   featuredPortfolio,
+  emailPortfolio,
 } from "../../data";
 
  
@@ -14,6 +15,14 @@ export default function Portfolio() {
       id: "featured",
       title: "Featured",
     },
+    {
+      id: "email",
+      title: "HTML Emails",
+    },
+    {
+      id: "css",
+      title: "CSS Animations",
+    },
   ];
 
   useEffect(() => {
@@ -21,22 +30,30 @@ export default function Portfolio() {
       case "featured":
         setData(featuredPortfolio);
          break;
+         case "email":
+        setData(emailPortfolio);
+        break;
+         case "css":
+        setData(emailPortfolio);
+        break;
       }
     }, [selected]);
 
   return (
     <div className="portfolio" id="portfolio">
         <h1>Portfolio</h1>
-        <ul>
+      
+      <ul>
       {list.map((item) => (
-        <PortfolioList 
-        title={item.title} 
-        active={selected === item.id} 
-        setSelected = {setSelected}
-        id={item.id}
-        />
-      ))}
+          <PortfolioList
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
         </ul>
+        
         <div className="container">
         {data.map((d) => (
            <a target="blank" href={d.link}>
