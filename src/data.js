@@ -9,12 +9,13 @@ export const featuredPortfolio = [
     id: 2,
     title: "Entrepreneur Site",
     img:"/assets/Rod Wave portfolio 1 .png",
-    link:"https://brianmbh.github.io/Rod-Wave-Complete/",
+    link:"https://brianmbh.github.io/Rod-Wave-Complete/Store.html"
 },
     {
     id: 3,
     title: "Piano",
     img:"/assets/piano js.png",
+    link:"https://brianspiano.netlify.app/"
 },
     {
     id: 4,
@@ -27,13 +28,16 @@ export const featuredPortfolio = [
 export const emailPortfolio = [
     {
       id: 1,
-      title: "Web Social Media App",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-    },]
+      title: "Promotional Email",
+      img: "/assets/promotion email.png",
+      link:"https://promotionemail.netlify.app/",
+    },
+];
 
 export const cssPortfolio = [
     {
       id: 1,
-      title: "Web Social Media App",
-      img: "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
+      title: "CSS Studio",
+      img: "/assets/CSS Studio PIC.png",
+      link: "https://bubblestudio.netlify.app/"
     },]

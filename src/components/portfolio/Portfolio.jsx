@@ -4,6 +4,7 @@ import "./portfolio.scss";
 import {
   featuredPortfolio,
   emailPortfolio,
+  cssPortfolio,
 } from "../../data";
 
  
@@ -34,7 +35,7 @@ export default function Portfolio() {
         setData(emailPortfolio);
         break;
          case "css":
-        setData(emailPortfolio);
+        setData(cssPortfolio);
         break;
       }
     }, [selected]);
